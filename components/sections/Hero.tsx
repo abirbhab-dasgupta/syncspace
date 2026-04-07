@@ -25,14 +25,7 @@ export function Hero() {
 
             {/* Content */}
             <div style={{ position: "relative", zIndex: 1, display: "flex", flexDirection: "column", alignItems: "center", width: "100%", maxWidth: 900 }}>
-                {/* Badge */}
-                <div style={{
-                    display: "inline-flex", alignItems: "center", gap: 6, borderRadius: 99, padding: "4px 12px", marginBottom: 28,
-                    fontSize: 12, fontWeight: 500, color: "#10b981", background: "#064e3b", border: "1px solid rgba(16,185,129,0.3)"
-                }}>
-                    <span style={{ width: 5, height: 5, borderRadius: "50%", background: "#10b981", animation: "dot-pulse 2s ease-in-out infinite", flexShrink: 0 }} />
-                    Agents now remember context across sessions
-                </div>
+
 
                 {/* H1 */}
                 <h1 style={{ fontSize: "clamp(40px,6vw,72px)", fontWeight: 500, letterSpacing: "-0.03em", lineHeight: 1.08, color: "var(--text-pri)", marginBottom: 24, maxWidth: 820 }}>

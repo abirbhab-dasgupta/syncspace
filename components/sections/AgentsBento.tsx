@@ -2,37 +2,40 @@
 
 import { useRef } from "react";
 
+import * as Icons from 'lucide-react';
+
+
 const agents = [
     {
-        id: "code", icon: "💻", name: "CodeBuddy", colClass: "ss-col-5",
+        id: "code", icon: "Code2", name: "CodeBuddy", colClass: "ss-col-5",
         title: "Debug, fix, and improve code",
         desc: "Paste any snippet — CodeBuddy identifies bugs, explains root causes, and returns corrected code with inline comments. Powered by GPT-4o-mini with Groq fallback.",
         chips: ["error-solving", "bug-finding", "refactoring"],
         color: "#10b981", tagBg: "rgba(16,185,129,0.1)", tagBorder: "rgba(16,185,129,0.2)", iconBg: "rgba(16,185,129,0.12)", glowColor: "rgba(16,185,129,0.08)"
     },
     {
-        id: "clarity", icon: "🧭", name: "ClarityAgent", colClass: "ss-col-4",
+        id: "clarity", icon: "Compass", name: "ClarityAgent", colClass: "ss-col-4",
         title: "Break complexity into steps",
         desc: "Transforms any complex task into a clear, step-by-step procedure — for developers, writers, and designers alike.",
         chips: ["task-breakdown", "planning"],
         color: "#818cf8", tagBg: "rgba(99,102,241,0.1)", tagBorder: "rgba(99,102,241,0.2)", iconBg: "rgba(99,102,241,0.12)", glowColor: "rgba(99,102,241,0.08)"
     },
     {
-        id: "research", icon: "🔍", name: "ResearchBot", colClass: "ss-col-3",
+        id: "research", icon: "Search", name: "ResearchBot", colClass: "ss-col-3",
         title: "Live web research",
         desc: "Tavily-powered real-time search. Returns structured, cited reports.",
         chips: ["tavily-api", "citations"],
         color: "#f59e0b", tagBg: "rgba(245,158,11,0.1)", tagBorder: "rgba(245,158,11,0.2)", iconBg: "rgba(245,158,11,0.12)", glowColor: "rgba(245,158,11,0.08)"
     },
     {
-        id: "design", icon: "🎨", name: "DesignExpert", colClass: "ss-col-7",
+        id: "design", icon: "Palette", name: "DesignExpert", colClass: "ss-col-7",
         title: "UI, PPT, and visual design guidance",
         desc: "Generates ASCII wireframes, layout critiques, color palette suggestions, and presentation structure — no design tool required.",
         chips: ["wireframes", "ui-review", "presentations", "color-theory"],
         color: "#ec4899", tagBg: "rgba(236,72,153,0.1)", tagBorder: "rgba(236,72,153,0.2)", iconBg: "rgba(236,72,153,0.12)", glowColor: "rgba(236,72,153,0.08)"
     },
     {
-        id: "docs", icon: "📝", name: "DocWriter", colClass: "ss-col-5",
+        id: "docs", icon: "FileText", name: "DocWriter", colClass: "ss-col-5",
         title: "Auto-detected documentation",
         desc: "Paste a code snippet → JSDoc (Mode A). Paste a repo description → full README (Mode B). Auto-detected.",
         chips: ["jsdoc", "readme-gen", "auto-detect"],

@@ -24,7 +24,7 @@ export function Navbar() {
 
             {/* Nav links */}
             <div style={{ display: "flex", alignItems: "center", gap: 4 }} className="hidden md:flex">
-                {["Agents", "Features", "Stack", "Docs"].map(l => (
+                {["Agents", "Features", "Stack"].map(l => (
                     <Link key={l} href={`#${l.toLowerCase()}`}
                         style={{ fontSize: 13.5, padding: "6px 12px", borderRadius: 8, color: "var(--text-sec)", textDecoration: "none", transition: "all 0.15s" }}
                         onMouseOver={e => { (e.currentTarget as HTMLElement).style.color = "var(--text-pri)"; (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.06)" }}
