@@ -1,12 +1,12 @@
 
-import { AgentsBento } from "@/components/sections/AgentsBento";
-import { CTA } from "@/components/sections/CTA";
-import { Features } from "@/components/sections/Features";
-import { Footer } from "@/components/sections/Footer";
-import { Hero } from "@/components/sections/Hero";
-import { Navbar } from "@/components/sections/Navbar";
-import { Stats } from "@/components/sections/Stats";
-import { TechStack } from "@/components/sections/TechStack";
+import { AgentsBento } from "@/components/landing/AgentsBento";
+import { CTA } from "@/components/landing/CTA";
+import { Features } from "@/components/landing/Features";
+import { Footer } from "@/components/landing/Footer";
+import { Hero } from "@/components/landing/Hero";
+import { Navbar } from "@/components/landing/Navbar";
+import { Stats } from "@/components/landing/Stats";
+import { TechStack } from "@/components/landing/TechStack";
 
 
 export default function Home() {

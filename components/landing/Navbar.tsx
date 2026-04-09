@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useTheme } from "@/components/ThemeProvider";
 import { Sun, Moon } from "lucide-react";
+import Image from "next/image";
+
 
 export function Navbar() {
     const { theme, toggleTheme } = useTheme();
@@ -37,6 +39,7 @@ export function Navbar() {
             {/* Actions */}
             <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                 <a href="#" style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "var(--text-sec)", textDecoration: "none", padding: "6px 12px", borderRadius: 8, border: "1px solid var(--border)", background: "rgba(255,255,255,0.02)", transition: "all 0.15s" }}>
+                    <Image src="/github.svg" alt="Github" width={16} height={16} />
                     <span className="hidden sm:inline">Open source</span>
                 </a>
                 <button onClick={toggleTheme} aria-label="Toggle theme"
