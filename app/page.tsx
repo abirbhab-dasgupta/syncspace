@@ -1,25 +1,23 @@
-
-import { AgentsBento } from "@/components/landing/AgentsBento";
-import { CTA } from "@/components/landing/CTA";
-import { Features } from "@/components/landing/Features";
-import { Footer } from "@/components/landing/Footer";
-import { Hero } from "@/components/landing/Hero";
-import { Navbar } from "@/components/landing/Navbar";
-import { Stats } from "@/components/landing/Stats";
-import { TechStack } from "@/components/landing/TechStack";
-
+import Navbar from "@/components/landing/navbar";
+import Hero from "@/components/landing/hero";
+import Agents from "@/components/landing/agents";
+import Features from "@/components/landing/features";
+import HowItWorks from "@/components/landing/how-it-works";
+import Cta from "@/components/landing/cta";
+import Footer from "@/components/landing/footer";
+import ScrollReveal from "@/components/landing/scroll-reveal";
 
 export default function Home() {
   return (
     <main>
       <Navbar />
       <Hero />
-      <Stats />
-      <AgentsBento />
+      <Agents />
       <Features />
-      <TechStack />
-      <CTA />
+      <HowItWorks />
+      <Cta />
       <Footer />
+      <ScrollReveal />
     </main>
   );
 }

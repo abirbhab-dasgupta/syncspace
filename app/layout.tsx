@@ -1,38 +1,34 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
-import { CursorGlow } from "@/components/ui/CursorGlow";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { ThemeProvider } from "@/components/landing/theme-provider";
 
 export const metadata: Metadata = {
-  title: "SyncSpace — AI-Powered Virtual Co-Working",
+  title: "SyncSpace — AI-Powered Co-Working",
   description:
-    "SyncSpace gives your team a shared workspace where AI agents fix bugs, break down tasks, research topics, design layouts, and write docs — entirely in the browser.",
-  keywords: ["AI", "co-working", "agents", "productivity", "remote work"],
+    "One room where AI handles the tedious parts. Five specialized AI agents for developers, designers, and writers — built right into your workspace.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ThemeProvider defaultTheme="dark">
-          {children}
-          <CursorGlow />
-        </ThemeProvider>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
